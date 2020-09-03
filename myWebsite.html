@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    .One td, th {
+      border:1px solid black;
+      width:33%
+    }
+
+    .two td, th {
+      border:1px solid black;
+      width:0%
+    }
+
+    #LargeBevel p{
+        border:20px solid black;
+        margin: 0px
+    }
+
+    #colorGradient{
+      background-image: linear-gradient(to bottom right, Blue, White, red);
+    }
+
+    #roundedGradient{
+      background-image: linear-gradient(to right, grey, White, grey);
+    }
+
+    .button {
+      margin: 0px 10%;
+      border-radius:5px;
+      border-color: black;
+      border-width: 3px;
+      cursor: wait;
+    }
+
+    .blinker{
+      animation: blinkingText 1s linear infinite;
+    }
+   @keyframes blinkingText{
+     0% {
+      opacity: 0;
+     }
+     50% {
+       opacity: .5;
+     }
+     100% {
+       opacity: 1;
+      }}
+  </style>
   <title> An Affront to Humanity </title>
 </head>
 <body style="background-color:powderblue">
@@ -17,7 +63,7 @@
   </ul>
   </div>
 
-  <h2 style="font-family:courier;font-size:50px" id="TT"> Terrible Text </h2>
+  <h2 style="font-family:courier;font-size:50px" id="TT"> HTML </h2>
   <ol>
     <li><p title="What do you expect?" style="font-family:Impact;"><strong>Font</strong> - it can make text awful looking</p></li>
     <li><p><strong>Seemingly Random Text Style</strong> - <i>Why</i> <em>are</em> <small>there</small> <mark>this</mark> <del>many</del> customization <sub>options</sub> <sup>that</sup> nobody <strong>uses</strong></p></li>
@@ -36,9 +82,43 @@
   </ol>
 
   <h2 style="font-family:courier;font-size:50px" id="css"> CSS</h2>
+  <table style="width:100%; border: 1px solid black; border-collapse: collapse" class="One">
+    <tr>
+      <th colspan="3">CSS Blunders</th>
+    </tr>
+    <tr>
+      <td><img src="https://welovecatsandkittens.com/wp-content/uploads/2018/11/wilfred-feat.jpg" alt="Small Ugly Cat" width="40" height="67" align="middle" /> Tiny Streched Images</td>
+      <td><iframe src="https://giphy.com/embed/7Jkv02RLFYj6M" width="100" height="67" align = "middle" frameBorder="0" class="giphy-embed"/></iframe> GIFs in general are annoying</td>
+      <td id="LargeBevel"><p> A Really Truly Large Bevel </p></td>
+    </tr>
+    <tr >
+      <td id="colorGradient">Awful Color Gradients</td>
+      <td><table style="width:100%; border: 1px solid black;" class="two">
+            <tr>
+              <td>Way</td>
+              <td>Too</td>
+              <td>Much</td>
+              <td>Sub</td>
+              <td>Division</td>
+              <td>For</td>
+              <td>It</td>
+              <td>To</td>
+              <td>Be</td>
+              <td>Nice</td>
+              <td>Looking</td>
+            </tr>
+          </table>
+      </td>
+      <td id="roundedGradient"><button onclick="alert('Looks pretty bad: I know')" class="button">1990s Curved Old Web Experience (Scroll Wheel Included)</button></td>
+    </tr>
+    <tr>
+      <td style="background-image: url('http://4.bp.blogspot.com/-6uUFiCSHVg4/UkjuEaVq3dI/AAAAAAAANCY/YP1RspjFu5Y/s1600/free+digital+scrapbook+paper+-+halloween+stripes.jpg')">Sometimes background images are just too much</td>
+      <td align="center" class="blinker">**ADVERTISEMENT**</td>
+      <td>Lack of Text Styling</td>
+    </tr>
+  </table>
 
-
-  <h2 style="font-family:courier;font-size:50px" id="OO"> Owner Error </h2>
+  <h2 style="font-family:courier;font-size:50px" id="OO"> Java Script </h2>
   <p align="up"> <strong>Not finishing sections</strong> - Yep, thats me</p>
 
   <h2 style="font-family:courier;font-size:50px" id="happy"> Our happy customers </h2>
