@@ -90,3 +90,8 @@ div.sticky{
    background-color: #ff9999;
    color: white;
  }
+
+ body {
+   background-image: url("rolling_doggo.gif");
+   background-repeat: repeat;
+ }
