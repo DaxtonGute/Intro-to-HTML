@@ -19,8 +19,11 @@ div.sticky{
   border: 1px solid black;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 10px;
   background-color: powderblue;
+  border-radius: 100px;
+  background-color: #f44336;
+  border-color: #f44336;
 }
 
 .One td, th {
@@ -61,7 +64,15 @@ div.sticky{
    opacity: 1;
   }}
 
- ul#menu li{
-   display:inline;
-   padding: 10px;
+ div#menu a{
+   background-color: #f44336;
+   color: white;
+   padding: 14px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+ }
+ div#menu a:hover{
+   background-color: #ff9999;
+   color: white;
  }
