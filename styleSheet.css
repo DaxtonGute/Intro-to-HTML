@@ -60,3 +60,8 @@ div.sticky{
  100% {
    opacity: 1;
   }}
+
+ ul#menu li{
+   display:inline;
+   padding: 10px;
+ }
