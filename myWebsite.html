@@ -7,21 +7,17 @@
   <script type = "text/javascript">
     var clicks = 0;
 
-    var timer = new Timer( {'interval':1000} );
-    timer.start( clicker );
-
     function clicker() {
-      alert("JS Function");
-      if(clicks >= 5){
-        document.getElementByID('fullScreen').style.display = "none";
+      document.getElementById('counter').innerHTML = "Click on this box " + (100 - clicks) + " more times";
+      if(clicks >= 100){
+        document.getElementById('fullScreen').style.display = "none";
       }else{
-        clicks = 0;
+        clicks++;
       }
     }
 
     function turnOn(){
-      alert("hey")
-      document.getElementByID('fullScreen').style.display = "block";
+      document.getElementById('fullScreen').style.display = "block";
     }
   </script>
 
@@ -33,14 +29,14 @@
 <body>
 
   <div id="fullScreen">
-    <div id="ad" style="border-radius: 10px">
+    <div id="ad" style="border-radius: 10px" onClick = "clicker()">
       <button id="closeButton">✖</button>
       <h1 align="center">Your Ad goes here!</h1>
       <h2 align="center"><a href="mailto:dax.gutekunst.23@bishops.com">Contact me</a> for pricing options</h2>
       <h1 align="center">To Exit</h3>
       <h4 align="center">Click the x</h4>
       <p align="center">or</p>
-      <h4 align="center">Click on this box 100 times</h4>
+      <h4 align="center" id="counter" style="color: red">Click on this box 100 more times</h4>
     </div>
   </div>
 
