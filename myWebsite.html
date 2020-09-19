@@ -2,12 +2,52 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="styleSheet.css" type="text/css"/>
+
+
+  <script type = "text/javascript">
+    var clicks = 0;
+
+    var timer = new Timer( {'interval':1000} );
+    timer.start( clicker );
+
+    function clicker() {
+      alert("JS Function");
+      if(clicks >= 5){
+        document.getElementByID('fullScreen').style.display = "none";
+      }else{
+        clicks = 0;
+      }
+    }
+
+    function turnOn(){
+      alert("hey")
+      document.getElementByID('fullScreen').style.display = "block";
+    }
+  </script>
+
+
   <title> An Affront to Humanity </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
+  <div id="fullScreen">
+    <div id="ad" style="border-radius: 10px">
+      <button id="closeButton">✖</button>
+      <h1 align="center">Your Ad goes here!</h1>
+      <h2 align="center"><a href="mailto:dax.gutekunst.23@bishops.com">Contact me</a> for pricing options</h2>
+      <h1 align="center">To Exit</h3>
+      <h4 align="center">Click the x</h4>
+      <p align="center">or</p>
+      <h4 align="center">Click on this box 100 times</h4>
+    </div>
+  </div>
+
   <h1 style="color:red;font-size:60px;text-align:center;" id="top"> How to make an ugly website: a tutorial through example </h1>
-  <hr />
-  <div><img src="https://welovecatsandkittens.com/wp-content/uploads/2018/11/wilfred-feat.jpg" alt="Ugly Cat" width="1200" height="400" align="middle" style="border-radius: 100px"/><div/
+  <hr/>
+
+  <img src="https://welovecatsandkittens.com/wp-content/uploads/2018/11/wilfred-feat.jpg" alt="Ugly Cat" width="100%" height="100%" align="middle" style="border-radius: 100px; margin-left: auto; margin-right: auto"/>
 
   <div class="sticky" id = "menu">
     <a href="#TT" style = "border-radius: 100px 0px 0px 100px">Terrible Text</a>
@@ -74,7 +114,7 @@
   </table>
 
   <h2 style="font-family:courier;font-size:50px" id="OO"> Java Script </h2>
-  <button class="bigButton">CLICK IT: I DARE YOU</button>
+  <button id="bigButton" onclick="turnOn()">CLICK IT: I DARE YOU</button>
   <p align="up"> <strong>Not finishing sections</strong> - IDK with this one</p>
 
   <h2 style="font-family:courier;font-size:50px" id="happy"> Our happy customers </h2>
