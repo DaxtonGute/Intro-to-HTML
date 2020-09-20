@@ -12,6 +12,9 @@
       document.getElementById('ad').style.backgroundColor = "rgba(" + (200-clicks) + ", " + 200 +", "+ (256-clicks) + ", 1)";
       if(clicks >= 100){
         document.getElementById('fullScreen').style.display = "none";
+        clicks = 0;
+        document.getElementById('ad').style.backgroundColor = "rgba(200, 200, 256, 1)";
+        document.getElementById('counter').innerHTML = "Click on this box 100 more times";
       }else{
         clicks++;
       }
