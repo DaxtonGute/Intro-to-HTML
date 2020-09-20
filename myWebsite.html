@@ -9,6 +9,7 @@
 
     function clicker() {
       document.getElementById('counter').innerHTML = "Click on this box " + (100 - clicks) + " more times";
+      document.getElementById('ad').style.backgroundColor = "rgba(" + (200-clicks) + ", " + 200 +", "+ (256-clicks) + ", 1)";
       if(clicks >= 100){
         document.getElementById('fullScreen').style.display = "none";
       }else{
